@@ -5,7 +5,7 @@ import NewsCard from './Shared/NewsCard/NewsCard'
 const Home = () => {
   const allNews = useLoaderData()
   return (
-    <div className="grid grid-flow-col auto-cols-max gap-4 justify-center">
+    <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 justify-items-center gap-4">
       {allNews.map((singlenews) => (
         <NewsCard key={singlenews.id} singlenews={singlenews}></NewsCard>
       ))}
